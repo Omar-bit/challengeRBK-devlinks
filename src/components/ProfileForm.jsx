@@ -68,7 +68,7 @@ function ProfileForm({ profile, setProfile }) {
               className='relative border w-36 rounded-md   cursor-pointer overflow-hidden'
             >
               <div
-                className='opacity-0 w-full absolute top-0 left-0 bg-[#b7b7b77e] h-full z-10 hover:opacity-100 flex flex-col justify-center items-center text-bgColor
+                className='opacity-0 w-full absolute top-0 left-0 bg-[#b7b7b77e] object-fit aspect-square z-10 hover:opacity-100 flex flex-col justify-center items-center text-bgColor
               '
               >
                 <BsImage className='' />
@@ -81,7 +81,7 @@ function ProfileForm({ profile, setProfile }) {
                     : 'https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png'
                 }
                 alt='User uploaded'
-                className='object-cover min-w-[100%] h-full	'
+                className=' min-w-[100%] object-fit aspect-square  	'
               />
             </label>
             <input
