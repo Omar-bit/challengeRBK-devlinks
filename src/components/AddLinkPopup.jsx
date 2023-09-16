@@ -37,7 +37,7 @@ function AddLinkPopup({ setAddLinkPopup, setLinks, toast }) {
   }
   return (
     <div className='w-[100vw] h-[100vh] fixed top-0 left-0 flex justify-center items-center bg-[#acababcb]'>
-      <div className=' flex flex-col items-center gap-7 shadow-lg   w-[30vw] p-5 bg-bgColor rounded-md '>
+      <div className=' flex flex-col items-center gap-7 shadow-lg max-w-[450px]  w-[90%]  md:w-[45%] lg:[35%]  p-5 bg-bgColor rounded-md '>
         <h2 className='font-bold text-2xl text-primary'>Add new link</h2>
         <select
           value={platform}
