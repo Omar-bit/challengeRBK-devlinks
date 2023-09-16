@@ -24,8 +24,21 @@ function App() {
         }
       />
       <Route
-        path='preview'
+        path='/preview'
         element={<Preview profile={profile} links={links} />}
+      />
+      <Route
+        path='/*'
+        element={
+          <>
+            <div className='h-screen w-full flex flex-col justify-center items-center text-2xl font-bold '>
+              <Link to='/' className='underline'>
+                {'<-'} Back To Home
+              </Link>{' '}
+              <br /> Page Not Found 404 !
+            </div>
+          </>
+        }
       />
     </Routes>
   );
